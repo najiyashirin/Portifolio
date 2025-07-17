@@ -4,3 +4,40 @@ body{
     background-position: fixed;
     background-size: cover;
 }
+.custom-navbar {
+      background-color: #000;
+      border-radius: 19px;
+      box-shadow: 0 4px 8px rgba(255, 252, 252, 0.2);
+      font-family: "Tektur", sans-serif;
+      font-size: 20px;
+      color: #fff;
+      padding: 5px 20px;
+    }
+
+        .custom-navbar .nav-link {
+        color: white !important;
+        padding: 10px 20px;
+        }
+
+        .custom-navbar .nav-link:hover {
+        text-decoration: underline;
+        color: #ddd !important;
+        }
+
+        .custom-navbar .navbar-toggler {
+        background-color: #fff;
+        }
+
+        .custom-navbar .navbar-collapse {
+        justify-content: space-between;
+        }
+
+        .custom-navbar .login-links a {
+        margin-left: 40px;
+        color: white !important;
+        }
+
+        .custom-navbar .login-links a:hover {
+        text-decoration: underline;
+        color: #ddd !important;
+        }
