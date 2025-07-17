@@ -1,43 +1,69 @@
-body{
-    background: url('porti2.png');
+body {
+    background: url('idkwatthisis.png');
     background-repeat: no-repeat;
-    background-position: fixed;
     background-size: cover;
-}
-.custom-navbar {
-      background-color: #000;
-      border-radius: 19px;
-      box-shadow: 0 4px 8px rgba(255, 252, 252, 0.2);
-      font-family: "Tektur", sans-serif;
-      font-size: 20px;
-      color: #fff;
-      padding: 5px 20px;
+    background-attachment: fixed;
+    font-family: "Tektur", sans-serif;
     }
+/* navbar-settings */
+.custom-navbar {
+    background-color: #000;
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.2);
+    font-family: "Tektur", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px;
+}
 
-        .custom-navbar .nav-link {
-        color: white !important;
-        padding: 10px 20px;
-        }
+.custom-navbar .nav-link {
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 15px;
+}
 
-        .custom-navbar .nav-link:hover {
-        text-decoration: underline;
-        color: #ddd !important;
-        }
+.custom-navbar .nav-link:hover {
+    transform: scale(1.2);
+    text-shadow: 0 6px 16px rgba(165, 245, 238, 0.3);
+    color: #ddd !important;
+}
 
-        .custom-navbar .navbar-toggler {
-        background-color: #fff;
-        }
+.custom-navbar .navbar-toggler {
+    background-color: #fff;
+    border-radius: 19px;
+}
 
-        .custom-navbar .navbar-collapse {
-        justify-content: space-between;
-        }
+.custom-navbar .navbar-collapse {
+    justify-content: space-between;
+}
 
-        .custom-navbar .login-links a {
-        margin-left: 40px;
-        color: white !important;
-        }
+.custom-navbar .login-links a {
+    margin-left: 40px;
+    color: white !important;
+}
 
-        .custom-navbar .login-links a:hover {
-        text-decoration: underline;
-        color: #ddd !important;
-        }
+.custom-navbar .login-links a:hover {
+    text-decoration: underline;
+    color: #ddd !important;
+}
+
+/* image */
+.mypic {
+    border: 1px solid #ffffff; /* Border color and thickness */
+    border-radius: 50% / 60%;
+    overflow:hidden;
+    margin-left: 1200px;
+    margin-top: 80px;
+    width: 400px;
+    height:800px;
+    box-shadow: 0 4px 12px #b2ecec;
+}
+.mypic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50% / 70%;
+}
