@@ -82,7 +82,8 @@ body {
   width: 400px;
   height: 500px;
   margin-top: 50px;
-  margin-left: 120px; /* Align to left with offset */
+  transform: none;
+  
 }
 
 .mypic {
@@ -129,10 +130,18 @@ body {
 /* Hero section layout */
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 120px 9% 100px;
-  
+  gap:180px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 }
 
 .home-content {
@@ -198,30 +207,12 @@ body {
   z-index: 1;
   transition: 0.5s;
 }
-.btn-box .btn-2{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 12rem;
-  height: 100%;
-  margin-left: 760px;
-  background-color: #00ffe5;
-  border: 0.2rem solid #00ffe5;
-  border-radius: 0.8rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  color: var(--bg-color);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-.btn-box .btn-2:hover ,.btn:hover{
+
+.btn-box .btn:hover{
   color: #00ffe5;
 }
 
-.btn-box .btn-2::before, .btn::before {
+.btn-box .btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -233,7 +224,7 @@ body {
   transition: 0.5s;
 }
 
-.btn-box .btn:hover::before, .btn-2:hover::before {
+.btn-box .btn:hover::before {
   width: 100%;
 }
 
@@ -244,17 +235,28 @@ body {
 }
 /* home over */
 
+
 /* about section */
 .aboutcontainer{
-    background-color: #0c1216;
+  max-height: 40rem;
+   
     display:flex;
     flex-direction: column;
 }
 .about-content{
+  border-left: 2px solid #00ffe5;
+  border-right: 2px solid #00ffe5;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: #0c1216;
   
 }
 #abouth3{
-    padding:70px;
+    padding:20px;
     font-size: 2.5rem;
     font-weight: 700;
     color: #ededed;
@@ -263,10 +265,159 @@ body {
 }
 #aboutp{
     padding: 20px 20px 20px 20px;
-    margin: 40px 80px 80px 80px;
+    margin: 40px 120px 30px 120px;
     text-align: center;
     font-size: 1.2rem;
     font-family: "Sulphur Point", sans-serif;
     letter-spacing: 0.1rem;
     color: #eff3f3;
 }
+/* Education -sectioon */
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    padding: 20px;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ddd;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    width: calc(50% - 20px);
+    padding: 20px;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(20px);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #0d443b;
+}
+
+.timeline-item:nth-child(even)::before {
+    right: auto;
+    left: -10px;
+}
+
+.timeline-content {
+    position: relative;
+    padding: 10px;
+}
+
+.year {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.year i {
+    margin-right: 10px;
+}
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.education-row .education-column {
+    flex: 1 1 30rem;
+}
+
+.education-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+.education-column .education-box {
+    border-left: 0.2rem solid var(--main-color);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 10;
+    left: -1.2%;
+    width: 1rem;
+    height: 1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.education-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.education-content .content:hover:before {
+    width: 100%;
+}
+.education-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-right: .5rem;
+}
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+.education-content .content h3 {
+    font-size: 2rem;
+}
+.education-content .content p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+/*  finished Education section */
