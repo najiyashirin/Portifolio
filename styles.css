@@ -749,3 +749,47 @@ body {
     height: 450px;
   }
 }
+
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 80px 40px 60px;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .home-content {
+    max-width: 100%;
+  }
+  
+  .home-content h1 {
+    font-size: 42px;
+  }
+  
+  .text-animate h3 {
+    font-size: 28px;
+  }
+  
+  .home-content p {
+    font-size: 17px;
+  }
+  
+  .mypic-wrapper {
+    width: 300px;
+    height: 380px;
+    margin-top: 30px;
+  }
+  
+  .about-content {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  #aboutp {
+    margin: 30px 60px;
+  }
+  
+  .skills-box {
+    width: 100%;
+  }
+}
