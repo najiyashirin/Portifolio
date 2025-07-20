@@ -793,3 +793,152 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+  }
+  
+  .navbar-brand {
+    font-size: 18px;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  .home-content h1 {
+    font-size: 36px;
+  }
+  
+  .text-animate h3 {
+    font-size: 24px;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+  }
+  
+  .about-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #aboutp {
+    margin: 20px 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  #abouth3 {
+    font-size: 28px;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    width: calc(100% - 50px);
+    padding: 15px;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+    transform: none;
+  }
+  
+  .timeline-item::before {
+    left: -30px;
+    right: auto;
+  }
+  
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+  
+  .year {
+    font-size: 16px;
+  }
+  
+  .skills-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .skills-content .skill h3 {
+    font-size: 18px;
+  }
+  
+  .projects .d-flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .project {
+    width: 100%;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .contact {
+    padding: 80px 20px;
+  }
+  
+  .contact form .input-box .input-field {
+    width: 100%;
+  }
+  
+  .contact form .textarea-field textarea {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 70px 20px 50px;
+  }
+  
+  .home-content h1 {
+    font-size: 32px;
+  }
+  
+  .text-animate h3 {
+    font-size: 20px;
+  }
+  
+  .btn-box .btn {
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  .mypic-wrapper {
+    width: 250px;
+    height: 320px;
+  }
+  
+  .about-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+  
+  .skills-content {
+    padding: 8px 15px;
+  }
+  
+  .title {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+}
