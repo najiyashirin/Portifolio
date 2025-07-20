@@ -1,11 +1,11 @@
 body {
     background: url('secondport.png');;
-    background-size: cover;            /* Cover full screen */
+    background-size: cover;            
     background-repeat:no-repeat;
     background-position: center;
-    background-attachment: fixed;      /* Makes it scroll with parallax effect */
+    background-attachment: fixed;      
     z-index: -1;             
-    
+    font-family: "Sulphur Point", sans-serif;
     }
 .homepage{
     height: auto; 
@@ -64,18 +64,7 @@ body {
     text-shadow: 0 6px 16px rgba(222, 241, 240, 0.3);
     color: #fdfcfc !important;
 }
-/* .custom-navbar .home-sci {
-    position: absolute;
-    bottom: 4rem;
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-.custom-navbar .home-sci a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-} */
+
 /* image */
 .mypic-wrapper { 
   position: relative;
@@ -119,7 +108,7 @@ body {
   z-index: 0;
   background: #00000030; /* dark translucent shadow */
   transform: translate(15px, 15px); /* Shadow offset */
-   /* Optional for softness */
+   
 }
 
 /* Main image on top */
@@ -132,7 +121,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 9% 100px;
+  padding: 120px 144px 100px;
   gap:180px;
 }
 
@@ -145,7 +134,7 @@ body {
 }
 
 .home-content {
-  max-width: 37rem;
+  max-width: 592px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -153,7 +142,7 @@ body {
 
 .home-content h1 {
   font-family: "Sulphur Point", sans-serif;
-  font-size: 3.6rem;
+  font-size: 57.6px;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -163,12 +152,12 @@ body {
 }
 
 .text-animate {
-  width: 32.8rem;
+  width: 524.8px;
 }
 
 .text-animate h3 {
   font-family: "Sulphur Point", sans-serif;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   color: #ededed;
   -webkit-text-stroke: 0.7px var(--main-color);
@@ -176,8 +165,8 @@ body {
 
 .home-content p {
   font-family: "Sulphur Point", sans-serif;
-  font-size: 1.2rem;
-  margin: 1rem 0 3rem;
+  font-size: 19.2px;
+  margin: 16px 0 48px;
   color: #ddd;
 }
 
@@ -185,22 +174,22 @@ body {
 .btn-box {
   display: flex;
   gap: 10px;
-  width: 10.5rem;
-  height: 3rem;
+  width: 168px;
+  height: 48px;
 }
 
 .btn-box .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: 240px;
   height: 100%;
   background-color: #00ffe5;
-  border: 0.2rem solid #00ffe5;
-  border-radius: 0.8rem;
-  font-size: 1.2rem;
+  border: 3.2px solid #00ffe5;
+  border-radius: 12.8px;
+  font-size: 19.2px;
   font-weight: 600;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.6px;
   color: var(--bg-color);
   position: relative;
   overflow: hidden;
@@ -238,7 +227,7 @@ body {
 
 /* about section */
 .aboutcontainer{
-  max-height: 40rem;
+  max-height: 640px;
    
     display:flex;
     flex-direction: column;
@@ -254,10 +243,11 @@ body {
   overflow: hidden;
   background-color: #0c1216;
   
+  
 }
 #abouth3{
     padding:20px;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 700;
     color: #ededed;
     -webkit-text-stroke: 0.7px var(--main-color);
@@ -267,9 +257,9 @@ body {
     padding: 20px 20px 20px 20px;
     margin: 40px 120px 30px 120px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     font-family: "Sulphur Point", sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1.6px;
     color: #eff3f3;
 }
 /* Education -sectioon */
@@ -279,7 +269,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 80px;
     padding: 20px;
 }
 .timeline {
@@ -340,9 +330,13 @@ body {
     position: relative;
     padding: 10px;
 }
-
+.timeline-content h3{
+    font-size: 24px;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 600;
+}
 .year {
-    font-size: 1.2em;
+    font-size: 19.2px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -354,40 +348,40 @@ body {
 .education .education-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 80px;
 }
 .education-row .education-column {
-    flex: 1 1 30rem;
+    flex: 1 1 480px;
 }
 
 .education-column .title {
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
+    font-size: 40px;
+    margin: 0 0 24px 32px;
 }
 .education-column .education-box {
-    border-left: 0.2rem solid var(--main-color);
+    border-left: 3.2px solid var(--main-color);
 }
 .education-box .education-content{
     position: relative;
-    padding-left: 2rem;
+    padding-left: 32px;
 }
 .education-box .education-content::before {
     content: '';
     position: absolute;
     top: 10;
     left: -1.2%;
-    width: 1rem;
-    height: 1rem;
+    width: 16px;
+    height: 16px;
     background: var(--main-color);
     border-radius: 50%;
 }
 .education-content .content{
     position: relative;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    margin-bottom: 2rem;
+    padding: 24px;
+    font-size: 24px;
+    border: 3.2px solid var(--main-color);
+    border-radius: 9.6px;
+    margin-bottom: 32px;
     overflow: hidden;
 }
 .education-content .content::before {
@@ -405,19 +399,21 @@ body {
     width: 100%;
 }
 .education-content .content .year{
-    font-size: 1.5rem;
+    font-size: 24px;
     color: var(--main-color);
-    padding-right: .5rem;
+    padding-right: 8px;
 }
 .education-content .content .year i {
-    padding-right: .5rem;
+    padding-right: 8px;
 }
 .education-content .content h3 {
-    font-size: 2rem;
+    font-size: 24px;
+    font-family: "Sulphur Point", sans-serif;
 }
 .education-content .content p {
-    font-size: 1.6rem;
-    padding-top: .5rem;
+    font-size: 25.6px;
+    padding-top: 8px;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 /*  finished Education section */
@@ -438,7 +434,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 80px;
 }
 .skills-row .skills-column {
     flex: 1;
@@ -447,9 +443,11 @@ body {
 .skills-column .title {
     position: relative;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 28.8px;
     color: #ffffff;
-    margin: 0 0 1.5rem;
+    margin: 0 0 24px;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
 }
 .skills-column .skills-box {
     position: relative;
@@ -460,9 +458,9 @@ body {
 }
 .skills-box .skills-content {
     position: relative;
-    border: .1rem solid var(--main-color);
-    border-radius: .3rem;
-    padding: .5rem 1.5rem;
+    border: 1.6px solid var(--main-color);
+    border-radius: 4.8px;
+    padding: 8px 24px;
     z-index: 1;
     overflow: hidden;
 }
@@ -482,14 +480,14 @@ body {
     width: 100%;
 }
 .skills-content .progress {
-    padding: 1.5rem 0;
+    padding: 24px 0;
 }
 .highlight-percent {
   color: var(--main-color); /* Choose any color you like */
   font-weight: bold;
 }
 .skills-content .progress h3 {
-    font-size: 2rem;
+    font-size: 32px;
     display: flex;
     justify-content: space-between;
 }
@@ -498,21 +496,23 @@ body {
     color: #ffffff;
 }
 .skills-content .progress .bar {
-    height: 1rem;
-    border-radius: .5rem;
-    border: .1rem solid var(--main-color);
-    padding: .2rem;
-    margin: 0rem 0;
+    height: 16px;
+    border-radius: 8px;
+    border: 1.6px solid var(--main-color);
+    padding: 3.2px;
+    margin: 0px 0;
 }
 .skills-content .progress .bar span {
     display: block;
     height: 100%;
-    border-radius: .5rem;
+    border-radius: 8px;
     background: var(--main-color);
 }
 .skills-content .skill h3{
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #ffffff;
+  font-family: "Sulphur Point", sans-serif;
+  
 }
 .skills-content .skill input[type="range"] {
     width: 100%;
@@ -574,7 +574,7 @@ body {
 .projects .d-flex {
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -582,8 +582,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 27rem;
-  margin-bottom: 2rem;
+  width: 432px;
+  margin-bottom: 32px;
 }
 .card-body{
     background:#0c1216
@@ -592,7 +592,7 @@ body {
     color: var(--main-color);
 }
 .card {
-  width: 18rem;
+  width: 288px;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(208, 230, 227, 0.12);
   border: none;
@@ -613,14 +613,16 @@ body {
 
 .card-title {
   font-family: "Sulphur Point", sans-serif;
-  font-size: 1.3rem;
+  font-size: 20.8px;
   color: #0c1216;
   font-weight: bold;
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 16px;
   color: #ffffff;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 400;
 }
 
 .btn-primary {
@@ -630,6 +632,7 @@ body {
   font-weight: 600;
   border-radius: 8px;
   transition: background 0.2s;
+  font-family: "Sulphur Point", sans-serif;
 }
 .btn-primary a{
     color: #0c1216;
@@ -641,12 +644,12 @@ body {
 /* Contact sectionnn---------- */
 .contact {
     min-height: auto;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .contact form {
-    max-width: 30rem;
+    max-width: 480px;
     margin: 0 auto;
     text-align: center;
 }
@@ -659,18 +662,20 @@ body {
 .contact form .input-box .input-field {
     position: relative;
     width: 49%;
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
     width: 100%;
     height: 100%;
-    padding: .5rem;
-    font-size: 1rem;
+    padding: 8px;
+    font-size: 16px;
     color: #ffffff;
     background: transparent;
-    border-radius: .3rem;
-    border: .1rem solid var(--main-color);
+    border-radius: 4.8px;
+    border: 1.6px solid var(--main-color);
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
 }
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder{
@@ -683,7 +688,7 @@ body {
     width: 0;
     height: 100%;
     background: var(--second-bg-color);
-    border-radius: .5rem;
+    border-radius: 8px;
     z-index: -1;
     transition: .5s;
 }
@@ -696,7 +701,7 @@ body {
 
 .contact form .textarea-field {
     position: relative;
-    margin: .8rem 0 1rem;
+    margin: 12.8px 0 16px;
     display: flex;
 }
 .contact form .textarea-field textarea {
@@ -710,13 +715,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 24px;
 }
 
 /* Custom Toast Styling */
 .custom-toast {
   border: 2px solid var(--bg-color);
-  background: rgba(12, 18, 22, 0.85); /* translucent using your bg color */
+  background: rgba(12, 18, 22, 0.85); 
   color: #0a0a0a;
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 24px rgba(0,255,229,0.18);
@@ -729,4 +734,20 @@ body {
 
 .custom-toast .btn-close {
   filter: invert(1);
+}
+/* ---------------footer part */
+.footer {
+  max-width: 100%;       
+  min-width: 100%;
+  margin: 0;
+  padding: 13px 0;
+  background: var(--bg-color);
+  box-sizing: border-box;
+}
+
+.footer-text {
+  text-align: center;
+  color: #ededed;
+  margin-bottom: 1px;
+  padding: 0;
 }
