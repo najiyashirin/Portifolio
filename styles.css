@@ -733,7 +733,7 @@ body {
 }
 
 .custom-toast .btn-close {
-  filter: invert(1);
+  color: #000000;
 }
 /* ---------------footer part */
 .footer {
