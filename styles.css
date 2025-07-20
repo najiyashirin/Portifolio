@@ -227,7 +227,7 @@ body {
 
 /* about section */
 .aboutcontainer{
-  max-height: 640px;
+  max-height: auto;
    
     display:flex;
     flex-direction: column;
