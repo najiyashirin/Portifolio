@@ -244,8 +244,8 @@ body {
     flex-direction: column;
 }
 .about-content{
-  border-left: 2px solid #00ffe5;
-  border-right: 2px solid #00ffe5;
+  border-left: 2px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
   margin-left: 120px;
   margin-right: 120px;
   padding-bottom: 20px;
@@ -303,7 +303,7 @@ body {
 .timeline-item {
     position: relative;
     margin: 20px 0;
-    width: calc(50% - 20px);
+    width: calc(50% - 40px);
     padding: 20px;
     background: var(--main-color);
     border-radius: 10px;
@@ -431,15 +431,18 @@ body {
 }
 
 .skills .skills-row {
-    width:800px;
-    height:1000px;
+    width:auto;
+    height:auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
     gap: 5rem;
 }
 .skills-row .skills-column {
-    flex: 1 1 30rem;
+    flex: 1;
+    
 }
 .skills-column .title {
     position: relative;
@@ -450,8 +453,10 @@ body {
 }
 .skills-column .skills-box {
     position: relative;
-    padding: 10px;
+    
     background: var(--bg-color);
+    width: 700px;
+    align-items: center;
 }
 .skills-box .skills-content {
     position: relative;
@@ -466,6 +471,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+ 
     width: 0;
     height: 100%;
     background: #3c4645;
@@ -479,7 +485,7 @@ body {
     padding: 1.5rem 0;
 }
 .highlight-percent {
-  color: #00ffe5; /* Choose any color you like */
+  color: var(--main-color); /* Choose any color you like */
   font-weight: bold;
 }
 .skills-content .progress h3 {
@@ -556,4 +562,171 @@ body {
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width:90%;
+}
+
+/* projects section */
+/* Project cards */
+.projects {
+  padding: 40px 0;
+  background: transparent;
+}
+
+.projects .d-flex {
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27rem;
+  margin-bottom: 2rem;
+}
+.card-body{
+    background:#0c1216
+}
+.card-body h5{
+    color: var(--main-color);
+}
+.card {
+  width: 18rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(208, 230, 227, 0.12);
+  border: none;
+  background: var(--bg-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 255, 229, 0.22);
+}
+
+.card-img-top {
+  border-radius: 18px 18px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 1.3rem;
+  color: #0c1216;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--main-color) 0%, #93d6cf 100%);
+  border: none;
+  color: #000000 !important;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.btn-primary a{
+    color: #0c1216;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #93d6cf 0%, var(--main-color) 100%);
+  color: #0c1216;
+}
+/* Contact sectionnn---------- */
+.contact {
+    min-height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.contact form {
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: 0.5rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: transparent;
+    border-radius: .3rem;
+    border: .1rem solid var(--main-color);
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: var(--text-color);
+}
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .5rem;
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 1rem;
+    display: flex;
+}
+.contact form .textarea-field textarea {
+    resize: none;
+}
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+.contact .btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Custom Toast Styling */
+.custom-toast {
+  border: 2px solid var(--bg-color);
+  background: rgba(12, 18, 22, 0.85); /* translucent using your bg color */
+  color: #000000;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 24px rgba(0,255,229,0.18);
+}
+
+.custom-toast .toast-header {
+  border-bottom: 1px solid var(--bg-color);
+  background: transparent;
+}
+
+.custom-toast .btn-close {
+  filter: invert(1);
 }
