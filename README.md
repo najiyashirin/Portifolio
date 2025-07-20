@@ -7,7 +7,6 @@ Welcome to my portfolio website! I'm a Computer Science Engineering student pass
 ## Contact
 
 - **Email**: [najiya3012@gmail.com](mailto:najiya3012@gmail.com)  
-- **Phone**: (+91) 9048299954  
 - **LinkedIn**: [linkedin.com/in/najiya-shirin-110102t](https://www.linkedin.com/in/najiya-shirin-110102t)  
 - **GitHub**: [github.com/najiyashirin](https://github.com/najiyashirin)  
 - **Instagram**: [@najiya_shiriin](https://www.instagram.com/najiya_shiriin/)
