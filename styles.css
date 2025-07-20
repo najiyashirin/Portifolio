@@ -717,7 +717,7 @@ body {
 .custom-toast {
   border: 2px solid var(--bg-color);
   background: rgba(12, 18, 22, 0.85); /* translucent using your bg color */
-  color: #000000;
+  color: #0a0a0a;
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 24px rgba(0,255,229,0.18);
 }
