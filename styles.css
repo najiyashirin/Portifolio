@@ -125,7 +125,7 @@ body {
   gap:180px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 954px) {
   .hero-section {
     flex-direction: column;
     padding-top: 80px;
